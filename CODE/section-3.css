@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*Section 3 container*/
+.section-3{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    min-height: 110vh;
+    background-color: #00303F;
+    color: rgb(233, 233, 233);
+}
+
+.section-3 > h3{
+    font: bold 45px Embria;
+    letter-spacing: 20px;
+    margin-top:3em;
+
+}
+
+/*CONTAINER OF SPAN*/
+.section-3 > div{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    
+}
+
+/*SPAN DESIGN*/
+.section-3 >div> span{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30%;
+    text-align: justify;
+}
+
+/*PROJECT TITLE*/
+.section-3 > div > span > h4{
+    margin-top: 3em;
+    font: bold 16px Coco Gothic;
+    color: #F3C623;
+}
+
+/*PROJECT DESCRIPTION*/
+.section-3 > div > span > p{
+
+    font: normal 16px Coco Gothic;
+    line-height: 1.3em;
+    color: rgb(201, 200, 199);
+}
+
+/*Building image */
+.section-3 > div > span > p > b >img{
+    width: 8%;
+    height: auto;
+}
+
+/*Override  Span 2 properties */
+.section-3 > div > span:nth-child(2) > p > b >img
+{
+    width: 15%;
+    height: auto;
+}
+
+.section-3 > div > span:nth-child(3) > p > b >img:nth-child(2) {
+    width: 15%;
+    height: auto;
+}
+.language{    
+    display: inline-flex;
+    align-items: center;
+    gap:1em;
+    margin-bottom: 1.5em;
+
+}
+.section-3 >div> span > img{
+    width: 60%;
+    
+}
+.section-3 >div> span:nth-child(2) > img{
+    width: 50%;
+    
+}
+
+.section-3 > div > span:first-child,
+.section-3 > div > span:last-child
+{
+    margin-top: 4em;
+}
+.section-3 > div > span:nth-child(2){
+    margin-top: 6em; 
+    align-self: center;
+
+}
+
+
+.section-3 > div > span > p{
+    width: 70%;
+
+}
+
+.section-3 input[type= button]{
+
+    background-color: #F3C623;
+    padding: 1em 3em;
+    border: 0px;
+    border-radius: 20px;
+    font: bold 12px Helvetica;
+    color: w;
+}
+
+@media screen and (max-width:1000px){
+
+    .section-3 > div {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        
+
+    }
+    .section-3 >div> span{
+        /* display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 30%;
+        text-align: justify; */
+        align-self: center;
+        width: 80%;
+ 
+
+    }
+    
+
+
+}

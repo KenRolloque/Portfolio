@@ -1,0 +1,85 @@
+.section-2{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    min-height:90vh ;
+    gap: 3em;
+
+    
+}
+.section-2 > h3:first-child{
+    font: bold 26px Coco Gothic;
+    margin-bottom: 1em;
+    color: rgb(50, 50, 50);
+
+}
+
+
+.section-2 > div {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+    width: 100%;
+    margin-bottom: 6em;
+    height: auto;
+}
+
+.section-2 > div > span{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2.2em;
+    width: 25%;
+    height: auto;
+}
+
+.section-2 > div > span > h3{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font: bold 20px Coco Gothic;
+    color: rgb(95, 95, 95);
+}
+.section-2 > div > span > h3 > img{
+    width: 12%;
+}
+
+.section-2 > div > span > p{
+    display: inline-flex;
+    flex: 1;
+    padding: 4em 3em;
+    text-align: justify;
+    font: normal 15px Tahoma;
+    line-height: 1.5em;
+    background: rgba( 236, 236, 236, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+}
+
+@media screen and (max-width:1000px){
+
+    .section-2 > div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .section-2 > div > span {
+        width: 80vw;
+    }
+
+    .section-2 > h3:first-child{
+        margin: 3em 0 0 0;
+    }
+
+    .section-2 > div > span > h3 > img{
+        width: 5%;
+    }
+}

@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+header{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 3em;
+    max-height: 10vh;
+    height: auto;
+    font-family: Ebrima;
+    position: sticky;
+    z-index:2 ;
+}
+
+
+
+/**side navigation **/
+
+
+
+
+
+
+header > h2{
+    font: bold 24px Ebrima;
+    margin-left: 3em;
+    color: rgb(156, 155, 155);
+
+}
+
+header > ul > li {
+    text-align: center;
+}
+header > ul > li > a {
+    text-decoration: none;
+    color: rgb(156, 155, 155); 
+}
+header > ul > li > a:hover{
+    color: blue;
+
+}
+
+header > ul > li > a:active{
+    color: blue;
+}
+
+header > ul {
+    display: inline-flex;
+
+    gap: 1em;
+    list-style-type: none;
+    margin-right: 3em;
+}
+
+header > ul > li{
+    padding: 1em 2em;
+    font: bold 17px Helvetica;
+
+
+}
+
+@media screen and (max-width:939px){
+
+    header > h2 {
+            display: none;
+
+        }
+}
+
+nav{
+    display: inline-flex;
+    /* dilay: none; */
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+
+
+}
+#side-nav-id{
+
+    display: inline-flex;
+    width: 0vw;
+    height: 100vh;
+    transition: 1s ease ;
+}
+
+#side-nav-id.active{
+    display: inline-flex;
+    height: 100vh;
+    transition: 1s ease ;
+    width: 80vw;
+    background-color: rgb(207, 207, 207);
+}
+
+
+.ham{
+    display: none;
+    /* display: inline-flex; */
+   
+    flex-direction: column;
+    margin: 2em 0em 2em 2em;
+}
+
+.ham > div{
+    display: block;
+    position: relative;
+    margin-top: .3em;
+    width: 40px;
+    height: 4px;
+    background-color:  black;
+    border-radius: 5px;
+   
+}
+
+
+
+@media screen and (max-width:640px){
+
+    header {
+        display: none;
+    }
+
+    .ham{
+        display: inline-flex;
+       
+    }
+    .content-1{
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width:457px){
+
+    header {
+        display: none;
+    }
+
+    .ham{
+        display: inline-flex;
+       
+    }
+    .content-1{
+        margin-top: 5em;
+    }
+}
+
+
+
+
+

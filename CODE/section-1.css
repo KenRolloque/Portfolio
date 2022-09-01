@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+body{
+    
+}
+
+/* Main Container of Sections*/
+main{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+}
+
+.content-1{
+    display: inline-flex;
+    width: 100%;
+    height: 89vh;
+    background: url(../images/wave.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+/*Content 1 Part 1*/
+.content-1 > div:first-child{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    width: 15vw;
+}
+/* Three Circles in the left side*/
+.content-1 > div:first-child > span{
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+/* Span Color Red*/
+.content-1 > div:first-child > span:first-child{
+    background-color: red;  
+}
+
+/* Span Color Green*/
+.content-1 > div:first-child > span:nth-child(2){
+    background-color: rgb(41, 221, 41);
+}
+
+/* Span Color Yellow*/
+.content-1 > div:first-child > span:last-child{
+    background-color: yellow;
+}
+
+
+.content-1 > div {
+    /* border: 1px solid blue; */
+}
+
+
+
+/*Content 1 Part 2*/
+.content-1 > div:nth-child(2){
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 40vw;
+}
+
+.content-1 > div:nth-child(2) > h2{
+    font: bold 50px Coco Gothic;   
+}
+.content-1 > div:nth-child(2) > h5{
+    font: bold 16px Coco Gothic;   
+    color: rgb(94, 92, 92);
+    margin: 1em 0 1.5em 0;
+}
+
+.content-1 > div:nth-child(2) > p{
+    font: normal 14px Verdana;  
+    margin-bottom: 3em; 
+
+}
+
+.content-1  input[type=button]{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    padding: 1em 1em;
+    border-radius: 5px;
+    background-color: #fc4a4a;
+    color: white;
+    font: normal 14px Verdana;
+    border: 0px;
+    
+}
+
+.content-1 > div:nth-child(2) > div{
+    display: inline-flex;
+    align-items: center;
+    font: bold 14px Tahoma;
+    /* color: rgb(94, 92, 92); */
+    color: white;
+    gap:1em;
+    margin: 24% 0 15% 1%;
+
+    
+}
+
+.content-1 > div:nth-child(2) > div > img{
+    width: 5%;
+
+}
+/*Content 1 Part 3*/
+.content-1 > div:nth-child(3){
+    width: 45vw;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-1 > div:last-child > img {
+
+    width: 50%;
+    background-color: #fc4a4a;
+    /* border-radius: 51% 49% 51% 49% / 63% 66% 34% 37% ; */
+    border-radius: 59% 41% 46% 54% / 49% 63% 37% 51% ;
+    margin-bottom:8em;
+
+}
+@media screen and (max-width:449){
+
+    .content-1{
+        margin-top: 2em;
+    }
+}
