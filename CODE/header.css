@@ -5,6 +5,9 @@
 }
 
 body{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
     overflow-x: hidden;
 }
 
@@ -17,9 +20,10 @@ header{
     padding: 3em;
     max-height: 10vh;
     height: auto;
-    font-family: Ebrima;
+    font-family: 'Open Sans', sans-serif;
     position: sticky;
     z-index:2 ;
+    margin-bottom: 3em;
 }
 
 
@@ -32,7 +36,7 @@ header{
 
 
 header > h2{
-    font: bold 24px Ebrima;
+    font: bold 24px 'Open Sans', sans-serif;
     margin-left: 3em;
     color: rgb(156, 155, 155);
 
@@ -44,6 +48,8 @@ header > ul > li {
 header > ul > li > a {
     text-decoration: none;
     color: rgb(156, 155, 155); 
+    font-family: 'Open Sans', sans-serif;
+
 }
 header > ul > li > a:hover{
     color: blue;

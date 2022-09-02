@@ -45,14 +45,14 @@
 /*PROJECT TITLE*/
 .section-3 > div > span > h4{
     margin-top: 3em;
-    font: bold 16px Coco Gothic;
+    font: bold 16px 'Roboto', sans-serif;
     color: #F3C623;
 }
 
 /*PROJECT DESCRIPTION*/
 .section-3 > div > span > p{
 
-    font: normal 16px Coco Gothic;
+    font: normal 16px 'Roboto', sans-serif;
     line-height: 1.3em;
     color: rgb(201, 200, 199);
 }
