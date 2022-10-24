@@ -1,0 +1,23 @@
+
+PART 2: INVESTIGATE DEVICES IN A WIRING CLOSET
+
+	[1] What are the subcategories for Network Devices?
+
+	Ans: The subcategories for Network devices are switches
+		routers, Wireless Devices, Hubs,security and WAN emulation
+	[2] What devices used a wired connection to connect to switch ALS2?
+
+	Ans: The devices that used wired connection to connect to 
+		switch ALS2 are the following:
+			Access_point
+			WebServer
+			ALS1
+
+	[3] Which device is connected to Access_Point?
+
+	Ans: Laptop is connected to Access_point through wireless Connection
+
+
+	[4] Where is the device connected to Access_Point physically located?
+
+	Ans: It is located on the Table

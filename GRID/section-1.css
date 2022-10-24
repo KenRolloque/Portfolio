@@ -1,0 +1,199 @@
+:root{
+    --black :#090909;
+    --semiblack: #131313;
+    
+}
+.section-1{
+    background-color: var(--semiblack);
+    z-index: 0;
+}
+
+.section-1 {
+    display: grid;
+    grid-template-columns: 20vw 40vw 40vw;
+    grid-template-rows: 100%;
+
+}
+
+/*SECTION 1 PART 1*/
+
+.section-1 > div{
+    display: inline-flex;
+
+}
+
+.section-1 > div:first-child{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.section-1 > div:last-child{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.burger-container{
+    display: none;
+    align-self: start;
+}
+
+
+.burger-container >span{
+    display: none;
+
+}
+
+.section-1 > div:first-child >span{
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+  
+    
+}
+
+.section-1 > div:first-child >span:first-child{
+    background-color: #3FA796;
+}
+.section-1 > div:first-child >span:nth-child(2){
+    background-color: #FEC260;
+}
+.section-1 > div:first-child >span:last-child{
+    background-color: #A10035;
+    
+}
+
+/*SECTION 1 PART 2*/
+
+.section-1 > div:nth-child(2){
+    /* background-color: wheat; */
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.section-1 > div:nth-child(2) > h2{
+        font: bold 50px Coco Gothic;  
+        color: #9bfcc8;
+}
+
+.section-1 > div:nth-child(2) > h5{
+    font: bold 16px Coco Gothic;   
+    margin: 1em 0 1.5em 0;
+    color: rgb(167, 167, 167);
+
+}
+
+.section-1 > div:nth-child(2) > p{
+    font: normal 14px Verdana;  
+    margin-bottom: 3em; 
+    line-height: 1.7;
+    color: rgb(220, 220, 220);
+}
+
+.section-1 > div:nth-child(2) i{
+    color: #9bfcc8;
+
+}
+.section-1  input[type=button]{
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    padding: 1em 1em;
+    border-radius: 5px;
+    background-color: #ff2d73;
+    color: white;
+    font: normal 14px Verdana;
+    border: 0px;
+    
+}
+
+
+/*SECTION 1 PART 3*/
+.section-1 > div:last-child{
+    /* background-color: wheat; */
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 > div:last-child > img{
+    width: 75%;
+    height: auto;
+    background: url(./image/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(90%);
+}
+
+
+.section-1 input[type =button]:hover{
+    background-color: #A10035;
+    transition: 1s ease;
+}
+
+.section-1 input[type =button]:not(:hover){
+    transition: 1s ease;
+}
+
+/*phone */
+
+@media only screen and (max-width : 425px){
+    
+    .section-1 > div{
+        display: inline-flex;
+        align-items: center;
+    }
+
+    /*ORDER OF SECTION 1 */
+    .section-1 {
+        grid-template-columns: 100vw ;
+        grid-template-rows: auto auto auto;
+        
+    }
+    .section-1 > div:first-child{
+        display: none;
+    }
+
+
+
+    .section-1 > div:nth-child(2){
+        padding: 10%;
+
+    } 
+    .section-1 > div:last-child{
+        grid-area: 1/1/2/2;
+        margin-top: 2em;
+
+    }
+
+    /*FONTS OF SECTION 1 */
+    .section-1 > div:nth-child(2) > h2{
+        font: bold 30px Coco Gothic;  
+        color: #9bfcc8;
+        text-align: center;
+    }
+
+    .section-1 > div:nth-child(2) > h5{
+        font: bold 16px Coco Gothic;
+        text-align: center; 
+    }
+
+    .section-1 > div:nth-child(2) > p{
+        font: normal 18px Verdana;  
+        text-align: center; 
+        margin-top: 7%;
+    }
+
+    /*Contact Me Button*/
+    .section-1  input[type=button]{
+        width: 30%;
+        padding: 1em 4em;
+        font: normal 18px Verdana;
+
+        
+    }
+
+}

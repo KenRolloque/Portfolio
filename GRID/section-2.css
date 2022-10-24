@@ -1,0 +1,243 @@
+:root{
+    --black :#090909;
+    --semiblack: #131313;
+    --font: rgb(220, 220, 220);  
+    --head:#9bfcc8;
+    --roundBorder:10px;
+
+    --p_phoneFont:18px;
+    --h_phoneFont:28px;
+
+    /*Media Query*/
+    
+}
+
+
+.section-2 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    color: var(--font);
+    background-color: var(--black);
+    justify-content: center;
+    gap: 3em;
+    padding: 0 0 5em 0;
+
+
+}
+
+
+/* ABOUT ME*/
+.section-2 > h3 {
+    font: bold 26px Coco Gothic;
+    padding-top: 4em;
+
+}
+
+/* UNDERLINE*/
+.section-2 > h3 > div{
+    margin-top: 0.3em;
+    display: flex;
+    height: 3px;
+    width: 3.6em;
+    background-color: yellow;
+    content: "";
+}
+
+/* ABOUT ME DESCRIPTION*/
+.section-2 > h3 > p {
+    margin-top: 2em;
+    color: #868686;
+    font: normal 12px 'Roboto', sans-serif;
+    line-height: 1.7;
+    
+}
+
+/* ABOUT ME BOXES CONTAINER*/
+.section-2 > div{
+    display: grid;
+    grid-template-columns: 25vw 25vw;
+    grid-template-rows: auto auto;
+    gap: 3em;
+    max-height: auto;
+    
+}
+
+/* ABOUT ME BOXES*/
+.section-2 > div > span {
+    display: inline-flex;
+    flex-direction: column;
+    background-image: url(./image/box.jpg);
+    background-size: cover;
+    border-radius: var(--roundBorder);
+
+}
+
+.section-2 > div > span,
+.section-2 > div > span > div
+{
+    border-radius: var(--roundBorder);
+
+}
+
+.section-2 > div > span > div> h3
+{
+   color: white;
+   padding: 1% 15% 5% 15%;
+}
+/* cover*/
+.coding> div{
+    border-radius: var(--roundBorder);
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(45, 183, 211, 0.8), rgb(37, 181, 210, 0.8));
+}
+
+.networking> div{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(219, 186, 66, 0.8), rgb(241,205,73,0.8));
+}
+
+.iot> div{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg,rgba(204, 69, 150, 0.8), rgb(233,80,172,0.8));
+}
+
+.database> div{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, rgba(37, 175, 60, 0.8), rgb(42,205,69,0.8));
+}
+
+/*Boxes Content*/
+.section-2 > div > span > div> h3
+{
+   color: white;
+   padding: 1% 15% 5% 12%;
+}
+.section-2 > div > span > div > img{
+    max-width: 12%;
+    height: auto;
+    margin: 10% 5% 0% 12%;
+
+}
+
+.section-2 > div > span > div > p{
+    display: inline-flex;
+    flex: 1;
+    padding: 0 3em 4em 3em;
+    text-align: justify;
+    font: normal 15px Tahoma;
+    line-height: 1.5em;
+    color: white;
+    /* background: rgba(44, 44, 44, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(1.2px); */
+}
+
+
+
+@media only screen and (max-width : 425px){
+
+    .section-2 > div{
+
+        grid-template-columns: 80vw;
+        grid-template-rows: auto;
+        gap: 3em;
+
+    }
+
+    .section-2 > div >  span > div > p{
+        font-size: var(--p_phoneFont);
+    }
+
+    .section-2 > div >  span > div > h3{
+        font-size: var(--h_phoneFont);
+    }
+
+    .section-2 > div > span > div> h3{
+        color: white;
+        padding: 0% 12% 5% 15%;
+        }
+
+    /* ABOUT ME*/
+    .section-2 > h3 {
+        font: bold 30px Coco Gothic;
+        padding-top: 4em;
+    }
+
+    .section-2 > h3 > p {
+        margin-top: 2em;
+        color: #868686;
+        font: normal 16px 'Roboto', sans-serif;
+        line-height: 1.7;
+        
+    }
+
+}
+/* 
+.section-2{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4em;
+    background-color: var(--black);
+    color: var(--font);
+
+}
+
+.section-2 > div {
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5em;
+    width: 100%;
+    margin-bottom: 6em;
+    height: auto;
+}
+
+.section-2 > h3{
+    font: bold 26px Coco Gothic;
+    margin-bottom: 1em;
+    text-align: center;
+ 
+
+}
+
+.section-2 > div > span > h3{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font: bold 20px Coco Gothic;
+    color: var(--head);
+
+}
+
+.section-2 > div > span{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 2.2em;
+    width: 25%;
+    height: auto;
+}
+
+.section-2 > div > span > p{
+    display: inline-flex;
+    flex: 1;
+    padding: 4em 3em;
+    text-align: justify;
+    font: normal 15px Tahoma;
+    line-height: 1.5em;
+
+    background: rgba(44, 44, 44, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(1.2px);
+}
+ */

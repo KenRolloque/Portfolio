@@ -1,0 +1,53 @@
+footer{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em 0 2em 0;
+    gap: 2em;
+}
+
+footer > h3{
+    color: white;
+    padding: 2em 2em 0 2em;
+}
+
+.soc-icons {
+    display: inline-flex;
+    justify-content: center;
+    gap: 1%;
+    max-width: 100%;
+    width: 100%;
+}
+.soc-icons> span{
+    display: inline-flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 0 20px 6px#0f0f0f;
+    background-color: #201f1f;
+    
+}
+footer > div > span > img{
+    width: 35px;
+    padding: 5px;
+    height: 35px;
+
+}
+
+footer > h5{
+
+    margin-top: 20px;
+    color: #5b5b5b;
+}
+
+
+@media only screen and (max-width : 425px){
+
+    footer{
+        background-color: #090909;
+    }
+
+
+}
