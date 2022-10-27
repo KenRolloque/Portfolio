@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Porfolio</title>
-
+  
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="section-1.css">
     <link rel="stylesheet" href="section-2.css">
@@ -19,10 +19,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
   </head>
 <body>
 
+    <!-- NAVIGATION BAR FOR PHONE-->
+    <button id = "hamburger"> 
+      <img src="./image/icon/menu_FILL0_wght400_GRAD0_opsz48.png" alt="">
+    </button>
+    <!-- NAVIGATION BAR FOR PHONE-->
 
+    <div class="side-nav">
+    
+      <!-- <img src="./image/KM.png" alt=""> -->
+      <img src="./image/icon/close_FILL0_wght400_GRAD0_opsz48.png" alt="">
+
+      <ul>
+     
+        <li class="btn"> <img src="./image/icon/home_FILL0_wght400_GRAD0_opsz48.png" alt=""> <a href="#section-1" >Home</a></li>
+        <li class="btn"><img src="./image/icon/info_FILL0_wght400_GRAD0_opsz48.png" alt=""><a href="#section-2" >About</a></li>
+        <li class="btn"><img src="./image/icon/school_FILL0_wght400_GRAD0_opsz48.png" alt=""><a href="#section-3">College</a></li>
+        <li class="btn"><img src="./image/icon/perm_contact_calendar_FILL0_wght400_GRAD0_opsz48.png" alt=""><a href="#footer">Contact</a></li>
+      </ul>
+
+    </div>
+    
     <!-- NAVIGATION BAR-->
       <header>
         <nav id ="navig">
@@ -30,7 +52,9 @@
             <!-- LOGO-->
             <img src="./image/KM.png" alt="">
 
+
              <ul>
+
                 <li class="btn"> <a href="#section-1" >HOME</a></li>
                 <li class="btn"><a href="#section-2" >ABOUT</a></li>
                 <li class="btn"><a href="#section-3">COLLEGE</a></li>
@@ -68,6 +92,7 @@
 
 
           <div>
+              <h4>😎 ASPIRING WEB DEVELOPER / SOFTWARE DEVELOPER</h4>
               <img src="./image/prof2.png" alt="">
           </div>
 
@@ -86,10 +111,15 @@
 
           <div class="subjects">
 
-            <div id = "subject-1" >CODING</div>
-            <div id = "subject-2">NETWORKING</div>
-            <div id = "subject-3">DATABASE MANAGEMENT</div>
-            <div id = "subject-4" >IoT</div>
+            <span>
+              <div id = "subject-1" >CODING</div>
+              <div id = "subject-2">NETWORKING</div>
+            </span>
+
+            <span>
+              <div id = "subject-3">DATABASE </div>
+              <div id = "subject-4" >IoT</div>
+            </span>
 
           </div>
 
@@ -285,6 +315,7 @@
 
                 getProj.style.animation = "showDesc 1s ease forwards";
                 getDesc.style.display ="inline-flex";
+                
 
               }
 

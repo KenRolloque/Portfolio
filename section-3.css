@@ -15,7 +15,6 @@
 #section-3 > div:first-child>h1 {
     width: 15%;
     border-bottom: 4px solid #00BEC1;
-
 }
 
 #section-3 > div:first-child{
@@ -47,6 +46,7 @@
 
     color: rgb(0, 0, 0);
 }
+
 #project > div{
   
     width: 35%;
@@ -77,12 +77,12 @@
     width: 40%;
     padding: .8em;
     border-radius: 5px;
-    border: 2px solid #6FEDD6;
+    border: 2px solid  rgb(199, 199, 199);
     background-color: white;
-    
 }
 #gitButton:hover{
-    background-color: #6FEDD6;
+    background-color: rgb(199, 199, 199);
+    border: 2px solid  rgb(199, 199, 199);
     transition: 1s ease;
 }
 
@@ -92,7 +92,7 @@
 }
 
 #gitButton > img{
-    width: 20%;
+    width: 15%;
     height: auto;
 }
 #project> div> div{
@@ -113,11 +113,6 @@
     
 }
 
-
-
-
-
-    
 
 #project-2-desc{
     display: none;
@@ -176,7 +171,7 @@
     }
     
     90%{
-        height: 59vh;
+        height: 90%;
     }
     100%{
         height: auto ;
@@ -189,7 +184,82 @@
        height: 46vh;
         
     }to{
-        height: 10vh;
+        height: 4.5em;
     }
     
+}
+
+
+@media only screen and (max-width: 415px) {
+
+
+    #section-3 {
+        padding-bottom: 5em;
+    }
+    #section-3 > div:first-child{
+
+        padding: 0;
+        font: bold 10px Inter;
+    }
+
+    #section-3 > div:first-child>h1 {
+        width: 22%;
+        border-bottom: 4px solid #00BEC1;
+    }
+
+    #section-3 > div:first-child > p{
+
+        font: normal 12px Roboto;
+        width: 80%;
+
+    }
+
+    #section-3 > div:first-child > *{
+        margin: 2em 0 0 2em;
+    }
+
+    #section-3 > div:first-child > p{
+        margin-left: 4em;
+    }
+
+    #project{
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    #project > div{
+        width: 80%;
+        margin-top: 1em;
+    }
+
+    #project> div > h3{
+        font-size: 13px;
+    }
+
+    #project> div> div{
+
+        padding: 2em 3em 2em 3em;
+    }
+
+    #project> div > div > p,
+    #project> div > div > span
+    {
+        font-size: 12px;   
+    }
+
+    #gitButton{
+        padding: .6em 1em;
+        width: 60%;
+        font-size: 10px;
+    }
+
+    @keyframes hideDesc {
+
+        from{
+           height: 46vh;
+            
+        }to{
+            height: 3.4em;
+        }
+}
 }
